@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/image.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1{
+    width: 90%;
+    height: 25%;
+    margin-top: 50px;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.container2{
+    height: 65%;
+    width: 90%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.row-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+}
+textarea{
+    width: 70%;
+    /* height: ; */
+    border: 1px solid black;
+}
+
+.col-1{
+    margin: 10px;
+    height: 50%;
+}
+.col-2{
+    margin:1.5%;
+    width: 50%;
+    height: 80%;
+}
+
+.row-8{
+    text-align: center;
+}
+.btn{
+    background-color: blue;
+    box-sizing: border-box;
+    color: white;
+    width: 120px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+    font-size: 20px;
+}
+
+input{
+    width: 90%;
+    border: 1px solid black;
+    height: 60%;
+    border-radius: 5px;
+}
+
+@media (max-width:600px) and (min-width:420px){
+    .container1{
+        width: 90%;
+    }
+    .container2{
+        width: 90%;
+    }
+
+    .container1 img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1199px) and (min-width:601px){
+    .container1{
+        width: 80%;
+    }
+    .container2{
+        width: 80%;
+    }
+}
+
+@media (min-width:1200px){
+    .container1{
+        width: 55%;
+        height: 25%;
+        margin-top: 50px;
+    }
+    .container1 img{
+        width: 100%;
+    }
+    .container2{
+        width: 55%;
+    }
+}
