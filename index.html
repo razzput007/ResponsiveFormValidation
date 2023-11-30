@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <img src="/assets/query.jpg" alt="contact-us" height="100px" width="100px" />
+        </div>
+        <div class="container2">
+            <form class="form" name="myForm" onsubmit="return validateForm()">
+                <div class="row-1">
+                    <div class="col-1">
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="col-2">
+                        <select id="title">
+                            <option value="">please select:</option>
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs">Mrs.</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr.</option>
+                        </select><br>
+                    </div>
+
+                </div>
+                <div class="row-1">
+                    <div class="col-1">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="fname" name="first_name" placeholder="Enter first name" required
+                            value=""> <div id="first-name-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                   
+                </div>
+                <div class="row-2 row-1">
+                    <div class="col-1">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="lname" name="last_name" placeholder="Enter last name" required>
+                        <div id="last-name-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                </div>
+                <div class="row-2 row-1">
+                    <div class="col-1">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                        <div id="email-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                </div>
+                <div class="row-4 row-1">
+                    <div class="col-1">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter phone number">
+                        <div id="mobile-number-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                </div>
+                <div class="row-5 row-1">
+                    <div class="co-1">
+                        <label for="username">username</label>
+                    </div>
+                    <div class="col-2">
+                        <input id="username" type="text" placeholder="Enter username" required />
+                    </div>
+                </div>
+                <div class="row-6 row-1">
+                    <div class="co-1">
+                        <label for="password">password</label>
+                    </div>
+                    <div class="col-2">
+                        <input id="password" type="password" placeholder="Enter password" required />
+                        <div id="password-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                </div>
+                <div class="row-7 row-1">
+                    <div class="col-1">
+                        <label for="skills">skills</label>
+                    </div>
+                    <div class="col-2">
+                        <textarea required></textarea>
+                    </div>
+                </div>
+                <div class="row-8 ">
+                    <button class="btn">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
