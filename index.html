@@ -14,13 +14,14 @@
             <img src="/assets/query.jpg" alt="contact-us" height="100px" width="100px" />
         </div>
         <div class="container2">
-            <form class="form" name="myForm" onsubmit="return validateForm()">
+            <form class="form" name="myForm" onsubmit="myfunc(e)" id="myForm">
                 <div class="row-1">
-                    <div class="col-1">
+                    <div class="col-1"
+                    id="title1">
                         <label for="title">Title</label>
                     </div>
-                    <div class="col-2">
-                        <select id="title">
+                    <div class="col-2" id="title2">
+                        <select id="title" required>
                             <option value="">please select:</option>
                             <option value="Mr">Mr.</option>
                             <option value="Mrs">Mrs.</option>
@@ -30,9 +31,9 @@
                     </div>
 
                 </div>
-                <div class="row-1">
+                <div class="row-1"  id="row-1">
                     <div class="col-1">
-                        <label for="fname">First Name:</label>
+                        <label for="fname">First Name</label>
                     </div>
                     <div class="col-2">
                         <input type="text" id="fname" name="first_name" placeholder="Enter first name" required
@@ -40,43 +41,54 @@
                     </div>
                    
                 </div>
-                <div class="row-2 row-1">
+                <div class="row-2 row-1"  id="row-2">
                     <div class="col-1">
-                        <label for="lname">Last Name:</label>
+                        <label for="lname">Last Name</label>
                     </div>
                     <div class="col-2">
                         <input type="text" id="lname" name="last_name" placeholder="Enter last name" required>
                         <div id="last-name-err" style="font-size: x-small; color: red;"></div>
                     </div>
                 </div>
-                <div class="row-2 row-1">
+                <div class="row-9 row-1"  id="row-9">
+                    <div class="col-1" style="text-align: center;">
+                        <label for="dob">Date of Birth</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="date" id="dob"  required
+                            value=""> <div id="first-name-err" style="font-size: x-small; color: red;"></div>
+                    </div>
+                   
+                </div>
+                <div class="row-2 row-1"  id="row-3">
                     <div class="col-1">
-                        <label for="email">Email:</label>
+                        <label for="email">Email</label>
                     </div>
                     <div class="col-2">
                         <input type="email" id="email" name="email" placeholder="Enter email address" required>
                         <div id="email-err" style="font-size: x-small; color: red;"></div>
                     </div>
                 </div>
-                <div class="row-4 row-1">
+                <div class="row-4 row-1"  id="row-4">
                     <div class="col-1">
-                        <label for="phone">Phone:</label>
+                        <label for="phone">Phone</label>
                     </div>
                     <div class="col-2">
                         <input type="tel" id="phone" name="phone" required placeholder="Enter phone number">
                         <div id="mobile-number-err" style="font-size: x-small; color: red;"></div>
                     </div>
                 </div>
-                <div class="row-5 row-1">
-                    <div class="co-1">
+                <div class="row-5 row-1" id="row-5">
+                    <div class="col-1">
                         <label for="username">username</label>
                     </div>
                     <div class="col-2">
                         <input id="username" type="text" placeholder="Enter username" required />
+                        <div id="username-err" style="font-size: x-small; color: red;"></div>
                     </div>
                 </div>
-                <div class="row-6 row-1">
-                    <div class="co-1">
+                <div class="row-6 row-1"  id="row-6">
+                    <div class="col-1">
                         <label for="password">password</label>
                     </div>
                     <div class="col-2">
@@ -84,16 +96,16 @@
                         <div id="password-err" style="font-size: x-small; color: red;"></div>
                     </div>
                 </div>
-                <div class="row-7 row-1">
+                <div class="row-7 row-1"  id="row-7">
                     <div class="col-1">
                         <label for="skills">skills</label>
                     </div>
                     <div class="col-2">
-                        <textarea required></textarea>
+                        <textarea  id="skills" required></textarea>
                     </div>
                 </div>
-                <div class="row-8 ">
-                    <button class="btn">submit</button>
+                <div class="row-8 " id="row-8">
+                    <button class="btn"  >submit</button>
                 </div>
             </form>
         </div>
